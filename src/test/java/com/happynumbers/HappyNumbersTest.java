@@ -13,6 +13,11 @@ public class HappyNumbersTest {
     }
 
     @Test
+    public void testExampleInHappyNumberDocumentation() {
+        assertTrue(happyNumbers.isHappy(19));
+    }
+
+    @Test
     public void allSingleDigitSquared() {
         for (int d = 0; d < 10; d++) {
             assertEquals(d*d, happyNumbers.sumSquaredDigits(d));

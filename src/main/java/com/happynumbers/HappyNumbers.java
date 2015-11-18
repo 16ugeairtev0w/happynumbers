@@ -28,6 +28,17 @@ public class HappyNumbers {
             throw new IllegalArgumentException("number larger than 1000 not supported");
         }
 
+        // Using the fact that the cycle for a non-looping number must terminate
+        // within a (strictly less than) 1000 steps. In other words, if we have
+        // not converged witin 1000 steps it's not a Happy number.
+        for (int i = 0; i < 1000; i++) {
+            if (number == 1) {
+                return true;
+            }
+
+            number = sumSquaredDigits(number);
+        }
+
         return false;
     }
 
