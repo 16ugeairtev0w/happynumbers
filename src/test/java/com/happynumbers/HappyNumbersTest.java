@@ -19,4 +19,11 @@ public class HappyNumbersTest {
         int aLongNumber = 1940287356;
         assertEquals(285, happyNumbers.sumSquaredDigits(aLongNumber));
     }
+
+    @Test
+    public void digitOrderDoesNotMatter() {
+        assertEquals(
+            happyNumbers.sumSquaredDigits(13579),
+            happyNumbers.sumSquaredDigits(75931));
+    }
 }
