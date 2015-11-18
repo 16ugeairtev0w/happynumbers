@@ -18,6 +18,11 @@ public class HappyNumbersTest {
     }
 
     @Test
+    public void testLengthOfHappyNumbers() {
+        assertEquals(143, happyNumbers.stream().count());
+    }
+
+    @Test
     public void allSingleDigitSquared() {
         for (int d = 0; d < 10; d++) {
             assertEquals(d*d, happyNumbers.sumSquaredDigits(d));

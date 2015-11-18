@@ -1,5 +1,7 @@
 package com.happynumbers;
 
+import java.util.stream.IntStream;
+
 /**
  * Tool for working with Happy numbers.
  *
@@ -53,5 +55,12 @@ public class HappyNumbers {
         }
 
         return sum;
+    }
+
+    /**
+     * Returns a stream of all happy numbers in the interval (1, 1000).
+     */
+    public IntStream stream() {
+        return IntStream.range(1,1001).filter(this::isHappy);
     }
 }
