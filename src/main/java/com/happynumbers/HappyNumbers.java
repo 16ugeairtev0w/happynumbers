@@ -15,7 +15,16 @@ package com.happynumbers;
  * For more details, @see <a href="https://en.wikipedia.org/wiki/Happy_number">the Wikipedia entry</a>
  */
 public class HappyNumbers {
+    // Return the sum of the squares of the digits in number
     int sumSquaredDigits(int number) {
-        return 4;
+        int sum = 0;
+        while (number > 0) {
+            int lastDigit = number % 10;
+            sum += lastDigit * lastDigit;
+
+            number /= 10;
+        }
+
+        return sum;
     }
 }

@@ -8,7 +8,9 @@ public class HappyNumbersTest {
     private HappyNumbers happyNumbers = new HappyNumbers();
 
     @Test
-    public void nextHappyNumberStep() {
-        assertEquals(4, happyNumbers.sumSquaredDigits(2));
+    public void allSingleDigitSquared() {
+        for (int d = 0; d < 10; d++) {
+            assertEquals(d*d, happyNumbers.sumSquaredDigits(d));
+        }
     }
 }
