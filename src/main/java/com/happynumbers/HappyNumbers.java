@@ -15,4 +15,7 @@ package com.happynumbers;
  * For more details, @see <a href="https://en.wikipedia.org/wiki/Happy_number">the Wikipedia entry</a>
  */
 public class HappyNumbers {
+    int sumSquaredDigits(int number) {
+        return 4;
+    }
 }
