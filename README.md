@@ -1,12 +1,13 @@
 # Happy number program
 
-This project is about building a program that will enumerate the first 1000
-Happy numbers. See https://en.wikipedia.org/wiki/Happy_number for the
-definition of Happy numbers.
+This project is about building a program that will enumerate the Happy numbers
+up to 1000. See https://en.wikipedia.org/wiki/Happy_number for the definition
+of Happy numbers.
 
 The project is built using Gradle and depend on
 * Java 8
 * Bash
+* diff
 
 ## How to build
 
