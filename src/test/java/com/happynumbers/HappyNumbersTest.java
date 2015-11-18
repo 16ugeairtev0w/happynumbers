@@ -13,4 +13,10 @@ public class HappyNumbersTest {
             assertEquals(d*d, happyNumbers.sumSquaredDigits(d));
         }
     }
+
+    @Test
+    public void longNumberSquared() {
+        int aLongNumber = 1940287356;
+        assertEquals(285, happyNumbers.sumSquaredDigits(aLongNumber));
+    }
 }
