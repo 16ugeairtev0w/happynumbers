@@ -15,6 +15,22 @@ package com.happynumbers;
  * For more details, @see <a href="https://en.wikipedia.org/wiki/Happy_number">the Wikipedia entry</a>
  */
 public class HappyNumbers {
+    /**
+     * Check whether @{code number} is a happy number.
+     *
+     * Only input values up to 1000 is supported.
+     * @param number The number to check whether it's happy or not. Values
+     *               larger thaan 1000 will result in an
+     *               IllegalArgumentException being thrown.
+     */
+    public boolean isHappy(int number) {
+        if (number > 1000) {
+            throw new IllegalArgumentException("number larger than 1000 not supported");
+        }
+
+        return false;
+    }
+
     // Return the sum of the squares of the digits in number
     int sumSquaredDigits(int number) {
         int sum = 0;
